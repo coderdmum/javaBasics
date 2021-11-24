@@ -1,4 +1,4 @@
-package com.coderm.basics;
+package com.coderm.basics.algorithm;
 //给定一个数组arr和一个数num，请把小于num是数放在数组的左边，
 //        等于num的数放在数组的中间，
 //        大于num是数放在数组的右边，要求额外空间为o(1),时间为o(n)
