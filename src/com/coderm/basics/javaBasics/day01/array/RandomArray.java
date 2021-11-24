@@ -2,6 +2,8 @@ package com.coderm.basics.javaBasics.day01.array;
 
 /*
 创建一个长度为6的int型数组，要求取值为1-30，同时元素值各不相同
+
+获取[a，b]范围的随机数： (int)(Math.random()*(b-a+1)) +a
 */
 
 public class RandomArray {
