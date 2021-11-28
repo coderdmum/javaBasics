@@ -23,7 +23,5 @@ public class bubbleSort {
             System.out.print(arr[i] + "\t");
         }
 
-
-
     }
 }
