@@ -64,7 +64,7 @@ public class liangGeLianBiaoXiangJiao {
         if (cur1 != cur2) {
             return null;
         }
-        cur1 = n > 0 ? head1 : head2; //谁长变成cur1
+        cur1 = n > 0 ? head1 : head2;  //谁长变成cur1
         cur2 = cur1 == head1 ? head2 : head1;//谁短变成cur2
         n = Math.abs(n);
         while (n != 0) {
