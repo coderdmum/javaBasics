@@ -1,5 +1,5 @@
 package com.coderm.basics.javaBasics.day06.java;
-//staticå…³é”®å­—çš„åº”ç”¨
+//static¹Ø¼ü×ÖµÄÓ¦ÓÃ
 public class CircleTest {
 	public static void main(String[] args) {
 		
@@ -8,11 +8,11 @@ public class CircleTest {
 		Circle c2 = new Circle();
 		
 		Circle c3 = new Circle(3.4);
-		System.out.println("c1çš„idï¼š" + c1.getId() );
-		System.out.println("c2çš„idï¼š" + c2.getId() );
-		System.out.println("c3çš„idï¼š" + c3.getId() );
+		System.out.println("c1µÄid£º" + c1.getId() );
+		System.out.println("c2µÄid£º" + c2.getId() );
+		System.out.println("c3µÄid£º" + c3.getId() );
 		
-		System.out.println("åˆ›å»ºçš„åœ†çš„ä¸ªæ•°ä¸ºï¼š" + Circle.getTotal());
+		System.out.println("´´½¨µÄÔ²µÄ¸öÊýÎª£º" + Circle.getTotal());
 		
 	}
 }
@@ -21,7 +21,7 @@ public class CircleTest {
 class Circle{
 	
 	private double radius;
-	private int id;//è‡ªåŠ¨èµ‹å€¼
+	private int id;//×Ô¶¯¸³Öµ
 	
 	public Circle(){
 		id = init++;
@@ -36,8 +36,8 @@ class Circle{
 		
 	}
 	
-	private static int total;//è®°å½•åˆ›å»ºçš„åœ†çš„ä¸ªæ•°
-	private static int init = 1001;//staticå£°æ˜Žçš„å±žæ€§è¢«æ‰€æœ‰å¯¹è±¡æ‰€å…±äº«
+	private static int total;//¼ÇÂ¼´´½¨µÄÔ²µÄ¸öÊý
+	private static int init = 1001;//staticÉùÃ÷µÄÊôÐÔ±»ËùÓÐ¶ÔÏóËù¹²Ïí
 	
 	public double findArea(){
 		return 3.14 * radius * radius;

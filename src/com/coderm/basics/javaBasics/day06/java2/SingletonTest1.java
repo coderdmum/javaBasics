@@ -1,5 +1,5 @@
 package com.coderm.basics.javaBasics.day06.java2;
-/*
+/**
  * 单例设计模式：
  * 1. 所谓类的单例设计模式，就是采取一定的方法保证在整个的软件系统中，对某个类只能存在一个对象实例。
  * 

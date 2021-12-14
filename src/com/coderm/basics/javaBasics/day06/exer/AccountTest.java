@@ -15,6 +15,8 @@ public class AccountTest {
 		
 		System.out.println(acct1.getInterestRate());
 		System.out.println(acct1.getMinMoney());
+
 	}
+
 	
 }
