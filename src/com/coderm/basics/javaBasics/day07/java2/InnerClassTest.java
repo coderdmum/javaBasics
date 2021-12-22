@@ -1,43 +1,43 @@
 package com.coderm.basics.javaBasics.day07.java2;
 /*
- * ç±»çš„å†…éƒ¨æˆå‘˜ä¹‹äº”ï¼šå†…éƒ¨ç±»
- * 1. Javaä¸­å…è®¸å°†ä¸€ä¸ªç±»Aå£°æ˜åœ¨å¦ä¸€ä¸ªç±»Bä¸­ï¼Œåˆ™ç±»Aå°±æ˜¯å†…éƒ¨ç±»ï¼Œç±»Bç§°ä¸ºå¤–éƒ¨ç±»
+ * ÀàµÄÄÚ²¿³ÉÔ±Ö®Îå£ºÄÚ²¿Àà
+ * 1. JavaÖĞÔÊĞí½«Ò»¸öÀàAÉùÃ÷ÔÚÁíÒ»¸öÀàBÖĞ£¬ÔòÀàA¾ÍÊÇÄÚ²¿Àà£¬ÀàB³ÆÎªÍâ²¿Àà
  * 
- * 2.å†…éƒ¨ç±»çš„åˆ†ç±»ï¼šæˆå‘˜å†…éƒ¨ç±»ï¼ˆé™æ€ã€éé™æ€ï¼‰  vs å±€éƒ¨å†…éƒ¨ç±»(æ–¹æ³•å†…ã€ä»£ç å—å†…ã€æ„é€ å™¨å†…)
+ * 2.ÄÚ²¿ÀàµÄ·ÖÀà£º³ÉÔ±ÄÚ²¿Àà£¨¾²Ì¬¡¢·Ç¾²Ì¬£©  vs ¾Ö²¿ÄÚ²¿Àà(·½·¨ÄÚ¡¢´úÂë¿éÄÚ¡¢¹¹ÔìÆ÷ÄÚ)
  * 
- * 3.æˆå‘˜å†…éƒ¨ç±»ï¼š
- * 		ä¸€æ–¹é¢ï¼Œä½œä¸ºå¤–éƒ¨ç±»çš„æˆå‘˜ï¼š
- * 			>è°ƒç”¨å¤–éƒ¨ç±»çš„ç»“æ„
- * 			>å¯ä»¥è¢«staticä¿®é¥°
- * 			>å¯ä»¥è¢«4ç§ä¸åŒçš„æƒé™ä¿®é¥°
+ * 3.³ÉÔ±ÄÚ²¿Àà£º
+ * 		Ò»·½Ãæ£¬×÷ÎªÍâ²¿ÀàµÄ³ÉÔ±£º
+ * 			>µ÷ÓÃÍâ²¿ÀàµÄ½á¹¹
+ * 			>¿ÉÒÔ±»staticĞŞÊÎ
+ * 			>¿ÉÒÔ±»4ÖÖ²»Í¬µÄÈ¨ÏŞĞŞÊÎ
  * 
- * 		å¦ä¸€æ–¹é¢ï¼Œä½œä¸ºä¸€ä¸ªç±»ï¼š
- * 			> ç±»å†…å¯ä»¥å®šä¹‰å±æ€§ã€æ–¹æ³•ã€æ„é€ å™¨ç­‰
- * 			> å¯ä»¥è¢«finalä¿®é¥°ï¼Œè¡¨ç¤ºæ­¤ç±»ä¸èƒ½è¢«ç»§æ‰¿ã€‚è¨€å¤–ä¹‹æ„ï¼Œä¸ä½¿ç”¨finalï¼Œå°±å¯ä»¥è¢«ç»§æ‰¿
- * 			> å¯ä»¥è¢«abstractä¿®é¥°
+ * 		ÁíÒ»·½Ãæ£¬×÷ÎªÒ»¸öÀà£º
+ * 			> ÀàÄÚ¿ÉÒÔ¶¨ÒåÊôĞÔ¡¢·½·¨¡¢¹¹ÔìÆ÷µÈ
+ * 			> ¿ÉÒÔ±»finalĞŞÊÎ£¬±íÊ¾´ËÀà²»ÄÜ±»¼Ì³Ğ¡£ÑÔÍâÖ®Òâ£¬²»Ê¹ÓÃfinal£¬¾Í¿ÉÒÔ±»¼Ì³Ğ
+ * 			> ¿ÉÒÔ±»abstractĞŞÊÎ
  * 
  * 
- * 4.å…³æ³¨å¦‚ä¸‹çš„3ä¸ªé—®é¢˜
- *   4.1 å¦‚ä½•å®ä¾‹åŒ–æˆå‘˜å†…éƒ¨ç±»çš„å¯¹è±¡
- *   4.2 å¦‚ä½•åœ¨æˆå‘˜å†…éƒ¨ç±»ä¸­åŒºåˆ†è°ƒç”¨å¤–éƒ¨ç±»çš„ç»“æ„
- *   4.3 å¼€å‘ä¸­å±€éƒ¨å†…éƒ¨ç±»çš„ä½¿ç”¨  è§ã€ŠInnerClassTest1.javaã€‹
+ * 4.¹Ø×¢ÈçÏÂµÄ3¸öÎÊÌâ
+ *   4.1 ÈçºÎÊµÀı»¯³ÉÔ±ÄÚ²¿ÀàµÄ¶ÔÏó
+ *   4.2 ÈçºÎÔÚ³ÉÔ±ÄÚ²¿ÀàÖĞÇø·Öµ÷ÓÃÍâ²¿ÀàµÄ½á¹¹
+ *   4.3 ¿ª·¢ÖĞ¾Ö²¿ÄÚ²¿ÀàµÄÊ¹ÓÃ  ¼û¡¶InnerClassTest1.java¡·
  * 
  */
 public class InnerClassTest {
 	public static void main(String[] args) {
 		
-		//åˆ›å»ºDogå®ä¾‹(é™æ€çš„æˆå‘˜å†…éƒ¨ç±»):
+		//´´½¨DogÊµÀı(¾²Ì¬µÄ³ÉÔ±ÄÚ²¿Àà):
 		Person.Dog dog = new Person.Dog();
 		dog.show();
-		//åˆ›å»ºBirdå®ä¾‹(éé™æ€çš„æˆå‘˜å†…éƒ¨ç±»):
-//		Person.Bird bird = new Person.Bird();//é”™è¯¯çš„
+		//´´½¨BirdÊµÀı(·Ç¾²Ì¬µÄ³ÉÔ±ÄÚ²¿Àà):
+//		Person.Bird bird = new Person.Bird();//´íÎóµÄ
 		Person p = new Person();
 		Person.Bird bird = p.new Bird();
 		bird.sing();
 		
 		System.out.println();
 		
-		bird.display("é»„é¹‚");
+		bird.display("»Æğ¿");
 		
 	}
 }
@@ -45,63 +45,63 @@ public class InnerClassTest {
 
 class Person{
 	
-	String name = "å°æ˜";
+	String name = "Ğ¡Ã÷";
 	int age;
 	
 	public void eat(){
-		System.out.println("äººï¼šåƒé¥­");
+		System.out.println("ÈË£º³Ô·¹");
 	}
 	
 	
-	//é™æ€æˆå‘˜å†…éƒ¨ç±»
+	//¾²Ì¬³ÉÔ±ÄÚ²¿Àà
 	static class Dog{
 		String name;
 		int age;
 		
 		public void show(){
-			System.out.println("å¡æ‹‰æ˜¯æ¡ç‹—");
+			System.out.println("¿¨À­ÊÇÌõ¹·");
 //			eat();
 		}
 		
 	}
-	//éé™æ€æˆå‘˜å†…éƒ¨ç±»
+	//·Ç¾²Ì¬³ÉÔ±ÄÚ²¿Àà
 	class Bird{
-		String name = "æœé¹ƒ";
+		String name = "¶Å¾é";
 		
 		public Bird(){
 			
 		}
 		
 		public void sing(){
-			System.out.println("æˆ‘æ˜¯ä¸€åªå°å°é¸Ÿ");
-			Person.this.eat();//è°ƒç”¨å¤–éƒ¨ç±»çš„éé™æ€å±æ€§
+			System.out.println("ÎÒÊÇÒ»Ö»Ğ¡Ğ¡Äñ");
+			Person.this.eat();//µ÷ÓÃÍâ²¿ÀàµÄ·Ç¾²Ì¬ÊôĞÔ
 			eat();
 			System.out.println(age);
 		}
 		
 		public void display(String name){
-			System.out.println(name);//æ–¹æ³•çš„å½¢å‚
-			System.out.println(this.name);//å†…éƒ¨ç±»çš„å±æ€§
-			System.out.println(Person.this.name);//å¤–éƒ¨ç±»çš„å±æ€§
+			System.out.println(name);//·½·¨µÄĞÎ²Î
+			System.out.println(this.name);//ÄÚ²¿ÀàµÄÊôĞÔ
+			System.out.println(Person.this.name);//Íâ²¿ÀàµÄÊôĞÔ
 		}
 	}
 	
 	
 	public void method(){
-		//å±€éƒ¨å†…éƒ¨ç±»
+		//¾Ö²¿ÄÚ²¿Àà
 		class AA{
 			
 		}
 	}
 	
 	{
-		//å±€éƒ¨å†…éƒ¨ç±»
+		//¾Ö²¿ÄÚ²¿Àà
 		class BB{
 			
 		}
 	}
 	public Person(){
-		//å±€éƒ¨å†…éƒ¨ç±»
+		//¾Ö²¿ÄÚ²¿Àà
 		class CC{
 			
 		}
