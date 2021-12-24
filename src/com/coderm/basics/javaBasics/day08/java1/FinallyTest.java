@@ -8,23 +8,23 @@ import java.io.IOException;
 import org.junit.Test;
 
 /*
- * try-catch-finallyä¸­finallyçš„ä½¿ç”¨ï¼š
+ * try-catch-finallyÖĞfinallyµÄÊ¹ÓÃ£º
  * 
  * 
- * 1.finallyæ˜¯å¯é€‰çš„
+ * 1.finallyÊÇ¿ÉÑ¡µÄ
  * 
- * 2.finallyä¸­å£°æ˜çš„æ˜¯ä¸€å®šä¼šè¢«æ‰§è¡Œçš„ä»£ç ã€‚å³ä½¿catchä¸­åˆå‡ºç°å¼‚å¸¸äº†ï¼Œtryä¸­æœ‰returnè¯­å¥ï¼Œcatchä¸­æœ‰
- * returnè¯­å¥ç­‰æƒ…å†µã€‚
+ * 2.finallyÖĞÉùÃ÷µÄÊÇÒ»¶¨»á±»Ö´ĞĞµÄ´úÂë¡£¼´Ê¹catchÖĞÓÖ³öÏÖÒì³£ÁË£¬tryÖĞÓĞreturnÓï¾ä£¬catchÖĞÓĞ
+ * returnÓï¾äµÈÇé¿ö¡£
  * 
- * 3.åƒæ•°æ®åº“è¿æ¥ã€è¾“å…¥è¾“å‡ºæµã€ç½‘ç»œç¼–ç¨‹Socketç­‰èµ„æºï¼ŒJVMæ˜¯ä¸èƒ½è‡ªåŠ¨çš„å›æ”¶çš„ï¼Œæˆ‘ä»¬éœ€è¦è‡ªå·±æ‰‹åŠ¨çš„è¿›è¡Œèµ„æºçš„
- *   é‡Šæ”¾ã€‚æ­¤æ—¶çš„èµ„æºé‡Šæ”¾ï¼Œå°±éœ€è¦å£°æ˜åœ¨finallyä¸­ã€‚
+ * 3.ÏñÊı¾İ¿âÁ¬½Ó¡¢ÊäÈëÊä³öÁ÷¡¢ÍøÂç±à³ÌSocketµÈ×ÊÔ´£¬JVMÊÇ²»ÄÜ×Ô¶¯µÄ»ØÊÕµÄ£¬ÎÒÃÇĞèÒª×Ô¼ºÊÖ¶¯µÄ½øĞĞ×ÊÔ´µÄ
+ *   ÊÍ·Å¡£´ËÊ±µÄ×ÊÔ´ÊÍ·Å£¬¾ÍĞèÒªÉùÃ÷ÔÚfinallyÖĞ¡£
  * 
  * 
  * 
  */
 public class FinallyTest {
 	
-	
+
 	@Test
 	public void test2(){
 		FileInputStream fis = null;
@@ -70,7 +70,7 @@ public class FinallyTest {
 			e.printStackTrace();
 			return 2;
 		}finally{
-			System.out.println("æˆ‘ä¸€å®šä¼šè¢«æ‰§è¡Œ");
+			System.out.println("ÎÒÒ»¶¨»á±»Ö´ĞĞ");
 			return 3;
 		}
 		
@@ -93,10 +93,10 @@ public class FinallyTest {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-//		System.out.println("æˆ‘å¥½å¸…å•Šï¼ï¼ï¼~~");
+//		System.out.println("ÎÒºÃË§°¡£¡£¡£¡~~");
 		
 		finally{
-			System.out.println("æˆ‘å¥½å¸…å•Š~~");
+			System.out.println("ÎÒºÃË§°¡~~");
 		}
 		
 	}
