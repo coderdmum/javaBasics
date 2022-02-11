@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/algorithm/softBasics/Quicksort.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/algorithm/softBasics/bubbleSort.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day01/array/BinarySearch.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day01/array/linearSearch.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day03/project/CustomerView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day06/java/CircleTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day06/java3/BlockTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day07/java1/USBTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day07/java2/InnerClassTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day08/java1/FinallyTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasicsHigh/day01/java/ThreadMethodTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasicsHigh/day03/java/StringBufferBuilderTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasicsHigh/day03/java/StringMethodTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasicsHigh/day04/java/DateTimeTest.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
