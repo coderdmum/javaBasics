@@ -3,6 +3,7 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/com/coderm/basics/algorithm/softBasics/Quicksort.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/coderm/basics/algorithm/softBasics/bubbleSort.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/coderm/basics/algorithm/softBasics/selectSoft.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day01/array/BinarySearch.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day01/array/linearSearch.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/coderm/basics/javaBasics/day03/project/CustomerView.java" charset="GBK" />

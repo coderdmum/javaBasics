@@ -1,32 +1,44 @@
 package com.coderm.basics.algorithm.softBasics;
 
-import java.util.Arrays;
 
 /**
  * @author
- * @Description é€‰æ‹©æ’åº
+ * @Description Ñ¡ÔñÅÅĞò
  * @date
  */
 public class selectSoft {
     public static void main(String[] args) {
-        int[] arr = {2,6,8,4,1};
-        int min;
-        int temp;
-        int j;
-        for(int i=0;i<arr.length-1;i++) {
-            min=i;  //å‡è®¾è¯¥ä¸‹æ ‡ä¸ºæœ€å°å€¼çš„ä¸‹æ ‡
-            j=i;
-            for(;j<arr.length;j++) {
-                if(arr[min]>arr[j]) {  //é€‰å–æœ€å°å€¼,å¾—åˆ°æœ€å°å€¼å¾—ä¸‹æ ‡
-                    min=j;
+        //Ä£ÄâÊı¾İ
+        int[] array = {52,63,14,59,68,35,8,67,45,99};
+        System.out.println("Ô­Êı×é£º");
+        for (int i : array) {
+            System.out.print(i+" ");
+        }
+        System.out.println();
+        selectSort(array);
+        System.out.println("ÅÅĞòºó£º");
+        for (int i : array) {
+            System.out.print(i+" ");
+        }
+    }
+
+    public static void selectSort(int[] arr){
+        for(int i = 0; i < arr.length-1; i++){
+            int min = i;
+            for(int j = i+1; j <arr.length ;j++){
+                if(arr[j]<arr[min]){
+                    min = j;
                 }
             }
-            //è¿›è¡Œäº¤æ¢
-            temp=arr[i];
-            arr[i]=arr[min];
-            arr[min]=temp;
-            System.out.printf("ç¬¬%dæ¬¡æ’åºçš„ç»“æœæ˜¯ï¼š \n",i+1);
-            System.out.println(Arrays.toString(arr));
+            if(min!=i){
+                swap(arr, i, min);
+            }
         }
+    }
+    //Íê³ÉÊı×éÁ½ÔªËØ¼ä½»»»
+    public static void swap(int[] arr,int a,int b){
+        int temp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = temp;
     }
 }
