@@ -11,13 +11,13 @@ public class selectSoft {
         //模拟数据
         int[] array = {52,63,14,59,68,35,8,67,45,99};
         System.out.println("原数组：");
-        for (int i : array) {
+        for (int i = 0; i < array.length; i++) {
             System.out.print(i+" ");
         }
         System.out.println();
         selectSort(array);
         System.out.println("排序后：");
-        for (int i : array) {
+        for (int i = 0; i < array.length; i++) {
             System.out.print(i+" ");
         }
     }
